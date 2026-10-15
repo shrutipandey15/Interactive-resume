@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shruti Pandey — Full-Stack & AI Developer</title>
+    <title>Shruti Pandey | Full-Stack & AI Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -40,43 +40,63 @@
     <section class="hero">
         <div class="hero-badge">
             <span class="pulse"></span>
-            Available for opportunities
+            open to AI engineer roles
         </div>
         <h1>
             I'm <span class="gradient-text">Shruti Pandey</span><br>
             Full-Stack & AI Developer
         </h1>
         <p class="hero-subtitle">
-            Building production systems serving millions of users. Specializing in AI integration, 
-            performance optimization, and accessible experiences.
+            I build the parts people only notice when they break. Right now that's RAG and SSO
+            at a healthtech company. Before that, middleware for a million TV boxes in Europe.
+            After hours, an app that asks how a book made you feel instead of how many stars it gets.
         </p>
         <div class="hero-stats">
             <div class="stat">
-                <div class="stat-value">1M+</div>
-                <div class="stat-label">Users Served</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">25%</div>
-                <div class="stat-label">Latency Reduced</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">3+</div>
+                <div class="stat-value">4+</div>
                 <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">90+</div>
+                <div class="stat-label">People asking my RAG bot things</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">1M+</div>
+                <div class="stat-label">TV boxes that booted faster</div>
             </div>
         </div>
         <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="#projects" class="btn btn-secondary">View Projects</a>
+            <a href="#contact" class="btn btn-primary">Say hi</a>
+            <a href="#projects" class="btn btn-secondary">See what I built</a>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
         <div class="section-header">
-            <div class="section-tag">// Where I've Worked</div>
-            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-tag">// where I've been</div>
+            <h2 class="section-title">Work</h2>
         </div>
         <div class="experience-grid">
+            <div class="experience-card current">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-company">XpertDox <span class="current-badge">Current</span></div>
+                        <div class="experience-client">Healthtech</div>
+                    </div>
+                    <div class="experience-meta">
+                        Full-Stack Developer<br>
+                        Feb 2026 – Present<br>
+                        Noida, India
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Built the company's RAG assistant end to end. Retrieval, API, the chat UI. 90+ people now ask it about medical, billing and client stuff instead of asking each other.</li>
+                    <li>Designed SSO across the whole product suite. Moved tokens out of localStorage into HttpOnly cookies, which closed an XSS hole nobody had gotten around to.</li>
+                    <li>Added cross-app auto-login, sliding-window refresh tokens and AES payload encryption. You sign in once. That's the whole point.</li>
+                    <li>Shipped a client-facing pricing tool that replaced a very tired spreadsheet, and the scheduling app the whole company uses.</li>
+                </ul>
+            </div>
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
@@ -85,16 +105,16 @@
                     </div>
                     <div class="experience-meta">
                         Digital Specialist Engineer<br>
-                        June 2022 – Present<br>
+                        June 2022 – Feb 2026<br>
                         Chandigarh, India
                     </div>
                 </div>
                 <ul class="experience-list">
-                    <li>Developed and maintained Node.js middleware serving over 1 million set-top boxes across Europe, ensuring 99.9% uptime.</li>
-                    <li>Engineered the React UI integration for Text-to-Speech (TTS) features, managing complex focus states and audio synchronization for visually impaired users.</li>
-                    <li>Led React frontend architecture for "SuperSearch," executing A/B testing that validated 12% improvement in content discoverability.</li>
-                    <li>Optimized cold boot performance by 4-5 seconds on RDK devices through middleware initialization streamlining.</li>
-                    <li>Automated Jenkins CI/CD pipelines, reducing manual release steps by 30% and accelerating deployment cycles.</li>
+                    <li>Kept Node.js middleware running on 1M+ set-top boxes across Europe. 99.9% uptime.</li>
+                    <li>Built the React side of text-to-speech for visually impaired viewers. Focus states and audio sync, the fiddly parts. The work I'm proudest of.</li>
+                    <li>Led the frontend for "SuperSearch." A/B tests said people found 12% more of what they were looking for.</li>
+                    <li>Cut 4-5 seconds off cold boot on RDK devices. Small number. Very long wait when you're holding a remote.</li>
+                    <li>Automated Jenkins pipelines and removed 30% of the manual release steps.</li>
                 </ul>
             </div>
             <div class="experience-card">
@@ -109,10 +129,10 @@
                     </div>
                 </div>
                 <ul class="experience-list">
-                    <li>Refactored legacy GIS backend using Python, achieving a 25% reduction in render latency for field teams.</li>
-                    <li>Integrated Assembly AI for voice-based tagging of map data during site audits, replacing manual data entry.</li>
-                    <li>Designed and implemented a plugin-based architecture for real-time data overlays, later adopted by other internal tools.</li>
-                    <li>Collaborated with domain experts to debug geo-coordinate validation logic, significantly improving location accuracy.</li>
+                    <li>Rewrote a legacy Python GIS backend. Maps rendered 25% faster for the people out in the field.</li>
+                    <li>Added voice tagging with Assembly AI so field teams could talk to the map instead of typing into it.</li>
+                    <li>Designed a plugin system for real-time overlays. Other internal tools quietly borrowed it.</li>
+                    <li>Sat with domain experts until the coordinate validation stopped putting things in the wrong place.</li>
                 </ul>
             </div>
         </div>
@@ -121,10 +141,41 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="section-header">
-            <div class="section-tag">// What I Work With</div>
-            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-tag">// what I reach for</div>
+            <h2 class="section-title">Tools</h2>
         </div>
         <div class="skills-container">
+            <div class="skill-category">
+                <div class="skill-category-title">
+                    <div class="skill-category-icon" style="background: rgba(251, 113, 133, 0.15);">🤖</div>
+                    AI & LLM Systems
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">RAG Pipelines</span>
+                    <span class="skill-tag">Embeddings & Vector Search</span>
+                    <span class="skill-tag">Retrieval Tuning</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">Google Gemini API</span>
+                    <span class="skill-tag">Claude Code</span>
+                    <span class="skill-tag">Hugging Face</span>
+                    <span class="skill-tag">Assembly AI</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">
+                    <div class="skill-category-icon" style="background: rgba(167, 139, 250, 0.15);">🔐</div>
+                    Auth & Security
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">SSO</span>
+                    <span class="skill-tag">OAuth 2.0</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">HttpOnly Cookie Sessions</span>
+                    <span class="skill-tag">Refresh Tokens</span>
+                    <span class="skill-tag">AES Encryption</span>
+                </div>
+            </div>
             <div class="skill-category">
                 <div class="skill-category-title">
                     <div class="skill-category-icon" style="background: rgba(34, 211, 238, 0.15);">⚛️</div>
@@ -132,11 +183,11 @@
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">React</span>
-                    <span class="skill-tag">Redux</span>
                     <span class="skill-tag">TypeScript</span>
                     <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Vite</span>
+                    <span class="skill-tag">Redux</span>
                     <span class="skill-tag">Tailwind CSS</span>
-                    <span class="skill-tag">SASS</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -149,60 +200,39 @@
                     <span class="skill-tag">FastAPI</span>
                     <span class="skill-tag">Express.js</span>
                     <span class="skill-tag">REST API</span>
-                    <span class="skill-tag">Microservices</span>
                     <span class="skill-tag">WebSocket</span>
+                    <span class="skill-tag">Microservices</span>
                 </div>
             </div>
             <div class="skill-category">
                 <div class="skill-category-title">
-                    <div class="skill-category-icon" style="background: rgba(251, 113, 133, 0.15);">🤖</div>
-                    AI & Machine Learning
+                    <div class="skill-category-icon" style="background: rgba(251, 113, 133, 0.15);">🗄️</div>
+                    Data, DevOps & Infra
                 </div>
                 <div class="skill-tags">
-                    <span class="skill-tag">LLMs</span>
-                    <span class="skill-tag">LangChain</span>
-                    <span class="skill-tag">RAG Pipelines</span>
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">Hugging Face</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">AWS (EC2, S3)</span>
+                    <span class="skill-tag">Bitbucket Pipelines</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Cloudflare Tunnel</span>
+                    <span class="skill-tag">Self-Hosting</span>
                 </div>
             </div>
             <div class="skill-category">
                 <div class="skill-category-title">
                     <div class="skill-category-icon" style="background: rgba(34, 211, 238, 0.15);">♿</div>
-                    Accessibility & Media
+                    Accessibility & Languages
                 </div>
                 <div class="skill-tags">
-                    <span class="skill-tag">Text-to-Speech (TTS)</span>
                     <span class="skill-tag">WCAG Standards</span>
-                    <span class="skill-tag">Web Audio API</span>
+                    <span class="skill-tag">Text-to-Speech (TTS)</span>
                     <span class="skill-tag">Screen Readers</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <div class="skill-category-icon" style="background: rgba(167, 139, 250, 0.15);">🗄️</div>
-                    Databases & DevOps
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Jenkins</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">CI/CD</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <div class="skill-category-icon" style="background: rgba(251, 113, 133, 0.15);">💻</div>
-                    Languages
-                </div>
-                <div class="skill-tags">
                     <span class="skill-tag">JavaScript (ES6+)</span>
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">C++</span>
                 </div>
             </div>
         </div>
@@ -211,17 +241,34 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="section-header">
-            <div class="section-tag">// What I've Built</div>
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-tag">// things I made because I wanted them to exist</div>
+            <h2 class="section-title">Projects</h2>
         </div>
         <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-image">🧬</div>
+                <div class="project-content">
+                    <div class="project-title">Bibliome</div>
+                    <p class="project-description">
+                        I can't rate a book out of five, so I built the thing I wanted instead. You log how a book made you feel. Bibliome turns your shelf into a reading DNA, finds readers who felt the same, and keeps a private journal per book. Built from scratch. Runs on a tiny PC in my house.
+                    </p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>Cloudflare Tunnel</span>
+                    </div>
+                    <a href="https://bibliome.app" target="_blank" rel="noopener" class="project-link">Visit bibliome.app →</a>
+                </div>
+            </div>
             <div class="project-card">
                 <div class="project-image">🔍</div>
                 <div class="project-content">
                     <div class="project-title">CodeCritter</div>
                     <p class="project-description">
-                        AI-powered code review extension for VS Code, published on the marketplace. Features 5 distinct reviewer personas, 
-                        security risk assessment, and circuit breaker patterns for API reliability.
+                        A code reviewer that lives in VS Code. Five reviewer personas, from gentle to unbearable. Flags security risks, and doesn't fall over when the API does. On the marketplace.
                     </p>
                     <div class="project-tech">
                         <span>VS Code Extension</span>
@@ -229,53 +276,51 @@
                         <span>React</span>
                         <span>Tailwind</span>
                     </div>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=shruti-pandey.codecritter" target="_blank" rel="noopener" class="project-link">Get it on the marketplace →</a>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">🎵</div>
+                <div class="project-image">🌿</div>
                 <div class="project-content">
-                    <div class="project-title">Moment Creator</div>
+                    <div class="project-title">Interactive Git Tutorial</div>
                     <p class="project-description">
-                        Real-time lyric-sharing application that synchronizes YouTube audio with transcribed lyrics. 
-                        Uses WebSockets for low-latency state sharing and Assembly AI for precise transcription.
+                        Git, taught as a story. Characters walk you through real commands in something that feels like your own terminal. Less scary than the docs.
                     </p>
                     <div class="project-tech">
-                        <span>React</span>
-                        <span>FastAPI</span>
-                        <span>WebSocket</span>
-                        <span>Assembly AI</span>
+                        <span>JavaScript</span>
+                        <span>Terminal UI</span>
+                        <span>Interactive Learning</span>
+                    </div>
+                    <a href="https://github.com/shrutipandey15/git-tutorial" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <div class="project-content">
+                    <div class="project-title">Job Application Agent</div>
+                    <p class="project-description">
+                        Job hunting is the same form fifty times. So I made a Playwright agent fill it.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Playwright</span>
+                        <span>Automation</span>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">🌐</div>
+                <div class="project-image">📖</div>
                 <div class="project-content">
-                    <div class="project-title">Public API Compass</div>
+                    <div class="project-title">Aftertaste</div>
                     <p class="project-description">
-                        Curated collection of 150+ undocumented public APIs. Built a searchable web portal 
-                        allowing developers to explore, test, and bookmark APIs directly from the interface.
+                        Where I write about books. No stars. Just what showed up and how loud it was.
                     </p>
                     <div class="project-tech">
-                        <span>React</span>
-                        <span>FastAPI</span>
-                        <span>Web Scraping</span>
+                        <span>Static Site</span>
+                        <span>GitHub Pages</span>
+                        <span>Writing</span>
                     </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">📚</div>
-                <div class="project-content">
-                    <div class="project-title">bookLovin</div>
-                    <p class="project-description">
-                        Full-stack social media application for book lovers. Features user authentication, 
-                        profile creation, book reviews, and discussion forums.
-                    </p>
-                    <div class="project-tech">
-                        <span>MongoDB</span>
-                        <span>Express.js</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                    </div>
+                    <a href="https://shrutipandey15.github.io/blog" target="_blank" rel="noopener" class="project-link">Read the blog →</a>
                 </div>
             </div>
         </div>
@@ -284,12 +329,12 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="section-header section-header-center">
-            <div class="section-tag">// Let's Connect</div>
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-tag">// say something</div>
+            <h2 class="section-title">Talk to me</h2>
         </div>
         <div class="contact-content">
             <p>
-                I'm always open to discussing new opportunities, interesting projects, or just having a chat about tech.
+                Hiring for AI or full-stack work? Building something odd with books, feelings or LLMs? Or just want to argue about a book? Write to me.
             </p>
             <div class="contact-links">
                 <a href="mailto:shrutipandey1505@gmail.com" class="contact-link">
@@ -310,7 +355,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Shruti Pandey. Built with passion & a lot of coffee ☕</p>
+        <p>© 2026 Shruti Pandey. Built by hand. Still fixing things.</p>
     </footer>
 
     <!-- Chat Toggle Button -->
@@ -325,7 +370,7 @@
         <div class="chat-header">
             <div class="chat-header-top">
                 <div class="chat-title">
-                    Ask About Shruti
+                    ask about shruti
                     <span class="ai-badge">AI</span>
                 </div>
                 <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
@@ -343,12 +388,12 @@
         </div>
         <div class="chat-messages" id="chatMessages">
             <div class="api-key-notice" id="apiKeyNotice">
-                <p>🔑 Enter your Gemini API Key to enable AI chat</p>
+                <p>🔑 Paste a Gemini API key to wake me up</p>
                 <small>Get one free at <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a></small>
                 <input type="password" class="api-key-input" id="apiKeyInput" placeholder="Paste your API key here..." aria-label="Gemini API Key">
             </div>
             <div class="message assistant">
-                Hey! 👋 I'm Shruti's AI assistant. Ask me anything about her experience, skills, projects, or just say hi! You can also click the mic button to talk to me.
+                Hi. I'm the bot Shruti built to answer questions about her so she doesn't have to. Ask about her work, her projects, anything. You can hold the mic and talk too.
             </div>
         </div>
         <div class="chat-input-container">
@@ -358,7 +403,7 @@
                         <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1 1.93c-3.94-.49-7-3.85-7-7.93h2c0 3.31 2.69 6 6 6s6-2.69 6-6h2c0 4.08-3.06 7.44-7 7.93V19h4v2H8v-2h4v-3.07z"/>
                     </svg>
                 </button>
-                <input type="text" class="chat-input" id="chatInput" placeholder="Ask about Shruti's experience..." aria-label="Chat message">
+                <input type="text" class="chat-input" id="chatInput" placeholder="ask me something..." aria-label="Chat message">
                 <button class="chat-btn send" id="sendBtn" title="Send message" aria-label="Send message">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
