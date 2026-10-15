@@ -589,6 +589,52 @@ section {
     color: var(--accent-secondary);
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+    border-bottom-color: var(--accent-primary);
+}
+
+.project-card.featured {
+    grid-column: 1 / -1;
+    border-color: rgba(167, 139, 250, 0.35);
+}
+
+.project-card.featured .project-image {
+    height: 160px;
+}
+
+/* Current role highlight */
+.current-badge {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 100px;
+    background: var(--gradient-2);
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 400;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.experience-card.current {
+    border-color: rgba(34, 211, 238, 0.25);
+}
+
 /* ==================== CONTACT SECTION ==================== */
 .contact-content {
     text-align: center;
